@@ -1,0 +1,17 @@
+[user]
+name = Catalin Cezar Ene
+email = catalincezarene@gmail.com
+
+[alias]
+history = log --oneline --graph --decorate
+merged = branch -v --merged
+no-merged = branch -v --no-merged
+undo-commit = reset --soft HEAD~1
+remotes = remote -v
+fuckit = reset --hard
+
+[color]
+ui = auto
+
+[init]
+defaultBranch = main
