@@ -6,3 +6,5 @@ compinit
 zstyle ':completion:*' hosts off
 promptinit
 prompt adam1 none
+
+[ -f .zshrc.local ] && source .zshrc.local
