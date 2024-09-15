@@ -9,6 +9,7 @@ no-merged = branch -v --no-merged
 undo-commit = reset --soft HEAD~1
 remotes = remote -v
 fuckit = reset --hard
+amend = commit --amend --no-edit
 
 [color]
 ui = auto
