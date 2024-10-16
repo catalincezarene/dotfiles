@@ -16,3 +16,7 @@ ui = auto
 
 [init]
 defaultBranch = main
+
+[core]
+editor = vim
+
