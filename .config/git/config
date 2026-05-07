@@ -1,0 +1,33 @@
+[user]
+name = Catalin Cezar Ene
+email = catalincezarene@gmail.com
+
+[alias]
+history = log --oneline --graph --decorate
+merged = branch -v --merged
+no-merged = branch -v --no-merged
+undo-commit = reset --soft HEAD~1
+remotes = remote -v
+amend = commit --amend --no-edit
+
+[color]
+ui = auto
+
+[core]
+editor = vim
+
+[diff]
+algorithm = histogram
+
+[init]
+defaultBranch = main
+
+[pull]
+rebase = true
+ff = only
+
+[receive]
+fsckObjects = true
+
+[transfer]
+fsckObjects = true

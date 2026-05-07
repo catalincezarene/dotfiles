@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -euxo pipefail
+
+export GIT_DIR="$HOME/.dotfiles.git"
+export GIT_WORK_TREE="$HOME"
+
+if [ ! -d "$GIT_DIR" ]; then
+    git clone --bare https://github.com/catalincezarene/dotfiles.git "$GIT_DIR"
+fi
+
+git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+git config status.showUntrackedFiles no
+
+git fetch origin main
+git reset --hard origin/main
