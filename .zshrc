@@ -26,15 +26,5 @@ prompt='%n@%m %~ %F{yellow}${vcs_info_msg_0_}%f
 
 alias ls='ls --color=auto'
 alias ll='ls -alh'
-alias dpsf='docker ps -qf'
-alias dcr='docker compose run --rm'
-
-composer() {
-  docker run --rm \
-    --interactive \
-    --tty \
-    --volume "$PWD":/app \
-    composer "$@"
-}
 
 () { for f; do source "$f"; done } "$HOME/.config/zsh/zshrc.d/"*.zsh(N)
