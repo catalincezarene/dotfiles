@@ -1,4 +1,4 @@
-path=("$HOME"/.local/opt/*/bin(N) "$HOME/.local/bin" $path)
+path=("$HOME/.local/bin" $path)
 fpath=("$HOME/.config/zsh/site-functions" $fpath)
 
 setopt HIST_IGNORE_DUPS
