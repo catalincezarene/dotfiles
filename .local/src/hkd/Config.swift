@@ -12,6 +12,7 @@ enum Config {
     .open(kVK_ANSI_F, app: "Finder"),
     .open(kVK_ANSI_G, app: "Firefox"),
     .open(kVK_ANSI_I, app: "IntelliJ IDEA"),
+    .open(kVK_ANSI_N, app: "Notes"),
     .open(kVK_ANSI_V, app: "Visual Studio Code"),
     .open(kVK_ANSI_X, app: "Xcode"),
   ]
