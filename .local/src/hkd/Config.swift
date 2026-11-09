@@ -15,5 +15,6 @@ enum Config {
     .open(kVK_ANSI_N, app: "Notes"),
     .open(kVK_ANSI_V, app: "Visual Studio Code"),
     .open(kVK_ANSI_X, app: "Xcode"),
+    .open(kVK_ANSI_R, app: "Reminders")
   ]
 }
