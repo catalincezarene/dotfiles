@@ -1,0 +1,16 @@
+services:
+  traefik:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - default
+    volumes:
+      - ./conf.d:/etc/traefik/conf.d:ro
+
+networks:
+  default:
+    name: traefik
+

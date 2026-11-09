@@ -1,0 +1,6 @@
+http:
+  routers:
+    dashboard:
+      rule: Host(`localhost`)
+      service: api@internal
+
